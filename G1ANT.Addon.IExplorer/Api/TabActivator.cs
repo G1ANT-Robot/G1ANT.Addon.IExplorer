@@ -154,6 +154,11 @@ namespace G1ANT.Addon.IExplorer
                         if (index == tabIndexToActivate)
                         {
                             tab.ActivateTab();
+                            var activeIe = IEManager.launchedIE?.Where(ie => ie.Ie.hWnd == _hWnd).FirstOrDefault();
+                            if (activeIe != null)
+                            {
+                                IEManager.SwitchIE(activeIe.Id);
+                            }
                             return;
                         }
 
