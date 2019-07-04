@@ -10,6 +10,7 @@
 using Accessibility;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.InteropServices;
 
 namespace G1ANT.Addon.IExplorer
