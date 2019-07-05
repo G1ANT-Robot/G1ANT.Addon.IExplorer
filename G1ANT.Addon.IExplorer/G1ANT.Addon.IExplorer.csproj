@@ -122,7 +122,7 @@
     <EmbeddedResource Include="..\ExternalDlls\Microsoft.mshtml.dll">
       <Link>Microsoft.mshtml.dll</Link>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(OutputPath)\..\..\..\Watin.Core\bin\$(Configuration)\WatiN.Core.dll">
+    <EmbeddedResource Include="..\Watin.Core\bin\$(Configuration)\WatiN.Core.dll">
       <Link>WatiN.Core.dll</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
