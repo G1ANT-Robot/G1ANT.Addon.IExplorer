@@ -45,9 +45,8 @@
       <HintPath>..\packages\MailKit.2.1.2\lib\net45\MailKit.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Unofficial.Microsoft.mshtml.7.0.3300\lib\net40\Microsoft.mshtml.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
-      <HintPath>$(ProgramFiles)\Microsoft Visual Studio\2017\Community\Common7\IDE\PublicAssemblies\Microsoft.mshtml.dll</HintPath>
     </Reference>
     <Reference Include="MimeKit, Version=2.1.0.0, Culture=neutral, PublicKeyToken=bede1c8a46c66814, processorArchitecture=MSIL">
       <HintPath>..\packages\MimeKit.2.1.2\lib\net45\MimeKit.dll</HintPath>
@@ -119,7 +118,7 @@
     <None Include="Resources\FindViaDocumentQuerySelector.js" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="..\ExternalDlls\Microsoft.mshtml.dll">
+    <EmbeddedResource Include="..\packages\Unofficial.Microsoft.mshtml.7.0.3300\lib\net40\Microsoft.mshtml.dll">
       <Link>Microsoft.mshtml.dll</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\Watin.Core\bin\$(Configuration)\WatiN.Core.dll">
