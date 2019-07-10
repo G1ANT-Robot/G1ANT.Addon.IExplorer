@@ -10,6 +10,7 @@
 using Accessibility;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.InteropServices;
 
 namespace G1ANT.Addon.IExplorer
@@ -154,6 +155,11 @@ namespace G1ANT.Addon.IExplorer
                         if (index == tabIndexToActivate)
                         {
                             tab.ActivateTab();
+                            var activeIe = IEManager.launchedIE?.Where(ie => ie.Ie.hWnd == _hWnd).FirstOrDefault();
+                            if (activeIe != null)
+                            {
+                                IEManager.SwitchIE(activeIe.Id);
+                            }
                             return;
                         }
 
