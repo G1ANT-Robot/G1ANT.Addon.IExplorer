@@ -36,7 +36,7 @@ namespace G1ANT.Addon.IExplorer
                 IEWrapper ie = IEManager.CurrentIE;
                 if(arguments.NoWait.Value)
                 {
-                    arguments.Script.Value = "setTimeout(\" { " + arguments.Script.Value + " }\", 1) ";
+                    arguments.Script.Value = $"setTimeout(function() {{ {arguments.Script.Value} }}, 0) ";
                 }
                 string result = ie.InsertJavaScriptAndTakeResult(arguments.Script.Value);
                 Scripter.Variables.SetVariableValue(arguments.Result.Value, new TextStructure(result));
