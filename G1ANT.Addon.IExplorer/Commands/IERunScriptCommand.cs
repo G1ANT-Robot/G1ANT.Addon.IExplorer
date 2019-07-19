@@ -23,7 +23,7 @@ namespace G1ANT.Addon.IExplorer
             [Argument(Tooltip = "Name of a variable where the script result will be stored")]
             public VariableStructure Result { get; set; } = new VariableStructure("result");
 
-            [Argument(Tooltip = "If set to `true`, the script will continue without waiting for a webpage to respond to a runscript")]
+            [Argument(Tooltip = "If set to `true`, the script will continue without waiting for a webpage to respond to the script that was run")]
             public BooleanStructure NoWait { get; set; } = new BooleanStructure(false);
         }
         public IERunScriptCommand(AbstractScripter scripter) : base(scripter)
